@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .header { background-color: #f4f4f4; padding: 10px; text-align: center; border-radius: 5px 5px 0 0; }
+        .content { padding: 20px; }
+        .button { display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Votre avis compte ! 🌟</h2>
+        </div>
+        <div class="content">
+            <p>Bonjour <strong>{{ order.customer_name }}</strong>,</p>
+            
+            <p>Merci pour votre commande <strong>{{ order.order_id }}</strong> chez <em>{{ order.from_client.shop }}</em>.</p>
+            
+            <p>Nous espérons que vous avez apprécié vos produits :</p>
+            <ul>
+                {% for product in order.product_id %}
+                    <li>Produit référence : {{ product }}</li>
+                {% endfor %}
+            </ul>
+
+            <p>Pourriez-vous prendre un instant pour partager votre expérience ?</p>
+            
+            <br>
+            <a href="#" class="button">Donner mon avis</a>
+        </div>
+    </div>
+</body>
+</html>

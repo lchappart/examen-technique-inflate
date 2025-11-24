@@ -1,0 +1,4 @@
+client_email,client_shop,client_first_name,client_last_name,user_email,user_name,user_last_name,user_location,order_id,product_ids
+shop@example.com,my-store.myshopify.com,John,Doe,customer1@example.com,Alice,Martin,Paris,ORD-001,"[123, 456]"
+shop@example.com,my-store.myshopify.com,John,Doe,customer2@example.com,Bob,Dupont,Lyon,ORD-002,"[789]"
+other-shop@example.com,other-store.myshopify.com,Jane,Smith,customer3@example.com,Charlie,Brown,Toulouse,ORD-003,"[123, 456, 789]"
